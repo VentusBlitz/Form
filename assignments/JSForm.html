@@ -106,10 +106,13 @@ function lengthRestriction(elem, min, max){
 
 function madeSelection(elem, helperMsg){
 	if(elem.value == "Please Choose"){
-		alert(helperMsg);
+		document.getElementById("demo4").innerHTML =
+	        "Please choose a state";
 		elem.focus();
 		return false;
 	}else{
+		document.getElementById("demo4").innerHTML =
+	        "";
 		return true;
 	}
 }
